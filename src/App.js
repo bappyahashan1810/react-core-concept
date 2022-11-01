@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import { useState } from 'react';
 
 function App() {
   return (
@@ -14,10 +15,14 @@ function App() {
 }
 
 function District(props) {
+  const [power, setPower] = useState(1);
+  const bootsPower = () => { setPower(power * 2) }
   return (
     <div className='district'>
       <h1>Name: {props.name}</h1>
       <p>Speciality: {props.speciality}</p>
+      <h4>Power: {power}</h4>
+      <button onClick={bootsPower}>Boots Up</button>
     </div>
   )
 }
