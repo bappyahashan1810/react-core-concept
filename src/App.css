@@ -32,7 +32,17 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.district {
+  border: 2px solid gray;
+  color: white;
+  border-radius: 10px;
+  background-color: darkslategray;
+  padding: 10px;
+  margin: 20px;
 }
